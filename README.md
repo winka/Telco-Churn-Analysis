@@ -17,7 +17,7 @@
 ### 1. 探索性分析：卡方檢定排行榜 (統計顯著性驗證)
 為避免主觀猜測，專案對所有類別變數進行了批次卡方檢定 (Batch Chi-Square Testing)。數據鐵證顯示，**「合約類型 (Contract)」**、**「線上安全 (OnlineSecurity)」**與**「技術支援 (TechSupport)」**包辦了關聯性排行榜前三名 ($P-value < 0.05$)。相反地，性別 (Gender) 則在統計上毫無關聯。
 
-*(可在此處放上卡方檢定排行榜截圖：`![Chi2 Rank](./images/chi2_rank.png)`)*
+[Chi2 Rank](./images/chi2_rank.png)
 
 ### 2. 機器學習探勘：決策樹尋找隱藏高風險組合
 導入 Decision Tree 演算法提取特徵重要性 (Feature Importance)。模型明確指出，除了「合約類型」外，客戶的**「在網年資 (tenure)」**與**「是否使用光纖網路 (Fiber optic)」**合計掌握了近 80% 的流失決策權。這揭示了「年資短 + 高單價光纖」是流失風險最極端的群體。
